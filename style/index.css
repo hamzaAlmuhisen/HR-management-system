@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #eeeeee;
+}
+
+header{
+  background-color: #3F72AF;
+  height: 100px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 32px 115px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+header nav ul a {
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  /* identical to box height */
+
+  text-decoration-line: none;
+
+  color: #F9F7F7;
+}
+
+main{
+  margin: 20px;
+}
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1050px;
+  max-height: 1050px;
+  min-width: auto;
+}
+
+td {
+  border-bottom: 1px solid #5e5454;
+  padding: 20px;
+}
+
+td h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: rgba(0, 0, 0);
+}
+
+footer{
+  padding: 20px;
+  text-align: start;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #1E1E1E;
+}
+footer p{
+color: #F9F7F7;
+font-weight: 300;
+
+}
+
+/* <-----------------------class class class class class class class----------------------->  */
+
+
+
+/* <-----------------------Opacity Opacity Opacity Opacity Opacity Opacity ----------------------->  */
+
+
+/* <-----------------------Spacing Spacing Spacing Spacing Spacing Spacing----------------------->  */
+
