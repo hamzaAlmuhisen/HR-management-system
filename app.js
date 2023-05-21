@@ -1,5 +1,10 @@
 'use strict';
 
+//to kick out the first id 
+let globalId = Math.floor(Math.random() * (1000)) + 1000;
+//to kick out the first id 
+
+
 const avgSalary = [{
     level: "Senior",
     min: 1500,
@@ -30,7 +35,8 @@ let Ghazi = {
     image: "",
     salary: 1500,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -48,7 +54,8 @@ let Lana = {
     image: "",
     salary: 1500,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -65,7 +72,8 @@ let Tamara = {
     image: "",
     salary: 1500,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -82,7 +90,8 @@ let Safi = {
     image: "",
     salary: 1000,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -99,7 +108,8 @@ let Omar = {
     image: "",
     salary: 1500,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -116,7 +126,8 @@ let Rana = {
     image: "",
     salary: 500,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -133,7 +144,8 @@ let Hadi = {
     image: "",
     salary: 1000,
     uniqueId: function () {
-        this.id = Math.floor(Math.random() * (1000)) + 1000;
+        globalId++;
+        this.id =  globalId;
     },
     RandSalary: function () {
         if (this.level == "Senior") this.salary = avgSalary[0].min + less500();
@@ -142,7 +154,23 @@ let Hadi = {
     }
 }
 
+
 const arrayEmp = [Ghazi, Lana, Tamara, Safi, Omar, Rana, Hadi]
+
+
+for(let i=0; i<4;i++){
+    
+
+    arrayEmp.forEach(emp => {
+
+        console.log(emp.id)
+        emp.uniqueId();
+    })
+
+    console.log("new id for users (maxmum unique id can be hold 10000 user)")
+
+}
+
 
 function randerEmployees(arrEmp) {
     let text = "";
@@ -150,7 +178,6 @@ function randerEmployees(arrEmp) {
     arrEmp.forEach(emp => {
         emp.uniqueId();
         emp.RandSalary();
-        console.log(emp.salary);
         text = text + `
      <tr>
         <td>
@@ -169,7 +196,7 @@ function randerEmployees(arrEmp) {
     <tbody>
     ${text}
     </tbody>
-    </table>` 
+    </table>`
 }
 
 
