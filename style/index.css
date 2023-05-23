@@ -60,8 +60,6 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 872px;
-  position: absolute;
-  bottom: 0;
 }
 footer p {
   color: #dbe2ef;
