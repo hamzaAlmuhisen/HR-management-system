@@ -56,13 +56,13 @@ function Employee(fullName, department, level, img) {
 
 }
 
-let Ghazi = new Employee("Ghazi Samer", "Administration", "Senior", "/assets/Ghazi.png");
-let Tamara = new Employee("Tamara Ayoub", "Marketing", "Senior", "/assets/Tamara.png");
-let Lana = new Employee("Lana Ali", "Finance", "Senior", "/assets/Lana.png");
-let Hadi = new Employee("Hadi Ahmad", "Finance", "MidSenior", "/assets/Hadi.png");
-let Safi = new Employee("Safi Walid", "Development", "MidSenior", "/assets/Safi.png");
-let Omar = new Employee("Omar Zaid", "Development", "Senior", "/assets/Omar.png");
-let Rana = new Employee("Rana Saleh", "Development", "junior", "/assets/Rana.png");
+let Ghazi = new Employee("Ghazi Samer", "Administration", "Senior", "assets/Ghazi.png");
+let Tamara = new Employee("Tamara Ayoub", "Marketing", "Senior", "assets/Tamara.png");
+let Lana = new Employee("Lana Ali", "Finance", "Senior", "assets/Lana.png");
+let Hadi = new Employee("Hadi Ahmad", "Finance", "MidSenior", "assets/Hadi.png");
+let Safi = new Employee("Safi Walid", "Development", "MidSenior", "assets/Safi.png");
+let Omar = new Employee("Omar Zaid", "Development", "Senior", "assets/Omar.png");
+let Rana = new Employee("Rana Saleh", "Development", "junior", "assets/Rana.png");
 const section = document.getElementById("section");
 
 
