@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <!-- Fonts -->
 
     <!-- Icons -->
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Icons -->
 
     <link rel="stylesheet" href="./style/index.css">
@@ -39,19 +41,32 @@
     </header>
 
     <main>
+        <div class="homeHeader">
+            <h1>All Employees</h1>
+            <div class="list-btn">
+                <button style="cursor: pointer;"  id="filter">
+                    <i class="material-symbols-rounded">
+                        filter_alt
+                    </i>
+                    Filter
+                </button>
+            </div>
+        </div>
+        <div id="section" >
 
-        <script src="./app.js"></script>
+        </div>
 
     </main>
 
     <footer>
         <p>Copyright ©HRsmart 2023</p>
         <div>
-            <a href="https://www.facebook.com/" > <img  src="./assets/facebook.png" /></a>
-            <a href="https://www.twitter.com/" > <img src="./assets/twitter.png" /></a>
+            <a href="https://www.facebook.com/"> <img src="./assets/facebook.png" /></a>
+            <a href="https://www.twitter.com/"> <img src="./assets/twitter.png" /></a>
             <a href="https://www.linkedin.com/"> <img src="./assets/linkin.png" /></a>
         </div>
     </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>
